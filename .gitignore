@@ -1,0 +1,26 @@
+# Ejecutables y binarios compilados
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+bin/
+
+# Archivos de base de datos o almacenamiento local (Si tienes)
+data/
+*.db
+
+# Archivos de entorno
+.env
+
+# Archivos de coverage de testeo
+coverage.out
+*.test
+
+# Carpetas de editores
+.vscode/
+.idea/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db

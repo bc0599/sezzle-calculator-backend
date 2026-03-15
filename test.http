@@ -1,0 +1,128 @@
+### Sum Test
+POST http://localhost:8080/calculate
+Content-Type: application/json
+
+{
+    "num1": 25,
+    "num2": 75,
+    "operator": "+"
+}
+
+### Subtraction Test
+POST http://localhost:8080/calculate
+Content-Type: application/json
+
+{
+    "num1": 25,
+    "num2": 75,
+    "operator": "-"
+}
+
+### Multiplication Test
+POST http://localhost:8080/calculate
+Content-Type: application/json
+
+{
+    "num1": 25,
+    "num2": 75,
+    "operator": "*"
+}
+
+### Division Test
+POST http://localhost:8080/calculate
+Content-Type: application/json
+
+{
+    "num1": 25,
+    "num2": 75,
+    "operator": "/"
+}
+
+### Power test
+POST http://localhost:8080/calculate
+Content-Type: application/json
+
+{
+    "num1": 25,
+    "num2": 75,
+    "operator": "^"
+}
+
+### Square Root
+POST http://localhost:8080/calculate
+Content-Type: application/json
+
+{
+    "num1": 25,
+    "num2": 75,
+    "operator": "sqrt"
+}
+
+### Percentage Root Test
+POST http://localhost:8080/calculate
+Content-Type: application/json
+
+{
+    "num1": 25.34,
+    "num2": 75,
+    "operator": "%"
+}
+
+### Divide by zero
+POST http://localhost:8080/calculate
+Content-Type: application/json
+
+{
+    "num1": 10,
+    "num2": 0,
+    "operator": "/"
+}
+
+### Error: JSON with broken sintaxis
+POST http://localhost:8080/calculate
+Content-Type: application/json
+
+{
+    "num1": 10,
+    "num2": 5
+    "operator": "+" 
+}
+
+### Error: Invalid Data
+POST http://localhost:8080/calculate
+Content-Type: application/json
+
+{
+    "num1": "diez",
+    "num2": 5,
+    "operator": "+"
+}
+
+### Error: Missing Operator
+POST http://localhost:8080/calculate
+Content-Type: application/json
+
+{
+    "num1": 10,
+    "num2": 5
+}
+
+### Error: Overflow
+POST http://localhost:8080/calculate
+Content-Type: application/json
+
+{
+    "num1": 999999,
+    "num2": 999999,
+    "operator": "^"
+}
+
+### Error: Operador does not exist
+POST http://localhost:8080/calculate
+Content-Type: application/json
+
+{
+    "num1": 10,
+    "num2": 5,
+    "operator": "MODULO_QUE_NO_EXISTE"
+}
